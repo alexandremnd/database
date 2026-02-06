@@ -9,8 +9,8 @@ conditions:
   resolution: 2160p
   type: resolution
 - name: WEB-DL
+  type: release_title
+  required: false
   negate: false
   pattern: WEBDL
-  required: true
-  type: release_group
 tests: []
