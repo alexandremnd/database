@@ -1,4 +1,4 @@
-name: Dual Audio
+name: Multi
 pattern: \b((multi[^a-zA-Z]*)|(dual[\s.-](audio|complete)))\b
 description: Matches releases with Dual Audio; Media releases that contain two language
   tracks - typically the original language (such as Japanese) along with an English
