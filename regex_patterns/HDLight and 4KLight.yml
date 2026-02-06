@@ -1,0 +1,57 @@
+name: HDLight and 4KLight
+pattern: (?i)(hd|4k)[\s.-]?light
+description: Matches HDLight and 4KLight (if we want or not a aggressive compression
+  for file size optimisation)
+tags:
+- Compression
+tests:
+- expected: true
+  id: 1
+  input: Double Trouble (1984) MULTi VFI 2160p 10bit 4KLight DV HDR BluRay DTS-HD
+    MA 2.0 x265
+  lastRun: '2026-02-06T22:53:26.495804'
+  matchSpan:
+    end: 51
+    start: 44
+  matchedContent: 4KLight
+  matchedGroups:
+  - 4K
+  passes: true
+- expected: true
+  id: 2
+  input: Punisher War Zone 2008 MULTi VFQ 2160p BluRay HDR 10bit 4KLight x265
+  lastRun: '2026-02-06T22:53:26.495804'
+  matchSpan:
+    end: 63
+    start: 56
+  matchedContent: 4KLight
+  matchedGroups:
+  - 4K
+  passes: true
+- expected: true
+  id: 3
+  input: Any Given Sunday 1999 DC MULTi VF2 1080p BluRay HDLight AC3 5.1 x264
+  lastRun: '2026-02-06T22:53:26.495804'
+  matchSpan:
+    end: 55
+    start: 48
+  matchedContent: HDLight
+  matchedGroups:
+  - HD
+  passes: true
+- expected: false
+  id: 4
+  input: Rio 2011 MULTi 2160p WEB HDR10 DDP5 1 H265-TFA
+  lastRun: '2026-02-06T22:53:26.495804'
+  matchSpan: null
+  matchedContent: null
+  matchedGroups: []
+  passes: true
+- expected: false
+  id: 5
+  input: Sirat (2025) VOSTFR 1080p 10bit BluRay TrueHD 7.1 Atmos x265-T4KT
+  lastRun: '2026-02-06T22:53:26.495804'
+  matchSpan: null
+  matchedContent: null
+  matchedGroups: []
+  passes: true

@@ -1,0 +1,11 @@
+name: HEVC
+description: Matches x265, HEVC and H265 regex patterns
+tags:
+- Codec
+conditions:
+- name: HEVC
+  type: release_title
+  required: true
+  negate: false
+  pattern: HEVC
+tests: []

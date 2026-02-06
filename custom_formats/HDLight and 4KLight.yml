@@ -1,0 +1,10 @@
+name: HDLight and 4KLight
+description: Matches HDLight and 4KLight file.
+tags: []
+conditions:
+- name: Light torrent
+  type: release_title
+  required: true
+  negate: false
+  pattern: HDLight and 4KLight
+tests: []

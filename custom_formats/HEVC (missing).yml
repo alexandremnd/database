@@ -1,0 +1,11 @@
+name: HEVC (missing)
+description: Matches when a file is not using a HEVC compliant encoding (not x265,
+  h265 or hevc)
+tags: []
+conditions:
+- name: HEVC
+  type: release_title
+  required: true
+  negate: true
+  pattern: HEVC
+tests: []
