@@ -3,4 +3,24 @@ pattern: \bDTS(\b|\d)
 description: ''
 tags:
 - Audio
-tests: []
+tests:
+- expected: true
+  id: 1
+  input: The Age of Adaline (2015) MULTi VFF 1080p 10bit BluRay DTS-HD MA 5.1 x265
+  lastRun: '2026-02-06T21:50:43.942153'
+  matchSpan:
+    end: 58
+    start: 55
+  matchedContent: DTS
+  matchedGroups:
+  - ''
+  passes: true
+- expected: false
+  id: 2
+  input: Does it Count if You Lose Your Virginity to an Android S01E05 UNCENSORED
+    SUBFRENCH 1080p ADN WEB x264 AAC2.0
+  lastRun: '2026-02-06T21:50:43.942153'
+  matchSpan: null
+  matchedContent: null
+  matchedGroups: []
+  passes: true

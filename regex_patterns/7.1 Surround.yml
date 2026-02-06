@@ -1,7 +1,25 @@
 name: 7.1 Surround
-pattern: \D7\.1\D
+pattern: \D7\.1(\D|$)
 description: ''
 tags:
 - Audio
 - Channel
-tests: []
+tests:
+- expected: true
+  id: 1
+  input: 8 Mile (2002) Hybrid MULTi VFF 2160p 10bit DV HDR BluRay x265 DTS-X 7.1-
+  lastRun: '2026-02-06T21:52:58.393662'
+  matchSpan:
+    end: 72
+    start: 67
+  matchedContent: ' 7.1-'
+  matchedGroups: []
+  passes: true
+- expected: false
+  id: 2
+  input: The Simpsons S37E13 VOSTFR 1080p WEB DDP 5.1 H264
+  lastRun: '2026-02-06T21:52:58.393662'
+  matchSpan: null
+  matchedContent: null
+  matchedGroups: []
+  passes: true

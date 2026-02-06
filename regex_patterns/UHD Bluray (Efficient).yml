@@ -4,6 +4,15 @@ description: Matches "UHD Bluray" or "UHD Blu-Ray" with a hyphen, space, dot or 
   between them
 tags: []
 tests:
-- id: 1
+- expected: true
+  id: 1
   input: 'Avatar: The Way of Water 2022 1080p UHD BluRay DDP 7.1 HDR10 x265-GALAXY'
-  expected: true
+  lastRun: '2026-02-06T21:53:57.693387'
+  matchSpan:
+    end: 46
+    start: 36
+  matchedContent: UHD BluRay
+  matchedGroups:
+  - UHD BluRay
+  - null
+  passes: true

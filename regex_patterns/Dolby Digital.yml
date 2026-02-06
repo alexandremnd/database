@@ -7,7 +7,7 @@ tests:
 - expected: true
   id: 1
   input: Un-Ex You 2025 1080p NF WEB-DL DD 5.1 H.264-FLUX
-  lastRun: '2025-07-13T14:55:08.599617'
+  lastRun: '2026-02-06T21:58:23.005513'
   matchSpan:
     end: 34
     start: 31
@@ -17,8 +17,18 @@ tests:
 - expected: false
   id: 2
   input: Un-Ex You 2025 1080p NF WEB-DL DD+ 5.1 H.264-FLUX
-  lastRun: '2025-07-13T14:55:08.599617'
+  lastRun: '2026-02-06T21:58:23.005513'
   matchSpan: null
   matchedContent: null
+  matchedGroups: []
+  passes: true
+- expected: true
+  id: 3
+  input: Loot S03 MULTI AD 2160p WEBRip ATVP DV HDR10+ x265 AC3 5.1 Atmos
+  lastRun: '2026-02-06T21:58:23.005513'
+  matchSpan:
+    end: 54
+    start: 51
+  matchedContent: AC3
   matchedGroups: []
   passes: true

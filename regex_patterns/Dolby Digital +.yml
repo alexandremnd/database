@@ -1,0 +1,36 @@
+name: Dolby Digital +
+pattern: \bDD[P+]|\b(e[-_. ]?ac3)\b
+description: ''
+tags:
+- Audio
+tests:
+- expected: false
+  id: 1
+  input: Un-Ex You 2025 1080p NF WEB-DL DD 5.1 H.264-FLUX
+  lastRun: '2026-02-06T21:58:35.296641'
+  matchSpan: null
+  matchedContent: null
+  matchedGroups: []
+  passes: true
+- expected: true
+  id: 2
+  input: Un-Ex You 2025 1080p NF WEB-DL DD+ 5.1 H.264-FLUX
+  lastRun: '2026-02-06T21:58:35.296641'
+  matchSpan:
+    end: 34
+    start: 31
+  matchedContent: DD+
+  matchedGroups:
+  - null
+  passes: true
+- expected: true
+  id: 3
+  input: Loot S03 MULTI AD 2160p WEBRip ATVP DV HDR10+ x265 EAC3 5.1 Atmos
+  lastRun: '2026-02-06T21:58:35.296641'
+  matchSpan:
+    end: 55
+    start: 51
+  matchedContent: EAC3
+  matchedGroups:
+  - EAC3
+  passes: true

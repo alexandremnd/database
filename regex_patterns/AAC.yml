@@ -3,4 +3,25 @@ pattern: \bAAC(\b|\d)
 description: ''
 tags:
 - Audio
-tests: []
+tests:
+- expected: true
+  id: 1
+  input: Does it Count if You Lose Your Virginity to an Android S01E05 UNCENSORED
+    SUBFRENCH 1080p ADN WEB x264 AAC2.0
+  lastRun: '2026-02-06T21:53:25.297970'
+  matchSpan:
+    end: 106
+    start: 102
+  matchedContent: AAC2
+  matchedGroups:
+  - '2'
+  passes: true
+- expected: false
+  id: 2
+  input: Sherlock Holmes (2009) MULTi VFF 2160p 10bit DV HDR BluRay x265 DTS-HDMA
+    5.1
+  lastRun: '2026-02-06T21:53:25.297970'
+  matchSpan: null
+  matchedContent: null
+  matchedGroups: []
+  passes: true

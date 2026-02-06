@@ -4,4 +4,32 @@ description: ''
 tags:
 - Audio
 - Channel
-tests: []
+tests:
+- expected: true
+  id: 1
+  input: The Simpsons S37E13 VOSTFR 1080p WEB DDP 5.1 H264
+  lastRun: '2026-02-06T21:51:53.581476'
+  matchSpan:
+    end: 45
+    start: 40
+  matchedContent: ' 5.1 '
+  matchedGroups: []
+  passes: true
+- expected: true
+  id: 2
+  input: Loot S03 MULTI AD 2160p WEBRip ATVP DV HDR10+ x265 EAC3 5.1 Atmos
+  lastRun: '2026-02-06T21:51:53.581476'
+  matchSpan:
+    end: 60
+    start: 55
+  matchedContent: ' 5.1 '
+  matchedGroups: []
+  passes: true
+- expected: false
+  id: 3
+  input: 8 Mile (2002) Hybrid MULTi VFF 2160p 10bit DV HDR BluRay x265 DTS-X 7.1
+  lastRun: '2026-02-06T21:51:53.581476'
+  matchSpan: null
+  matchedContent: null
+  matchedGroups: []
+  passes: true
