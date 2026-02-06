@@ -1,0 +1,43 @@
+name: WEBDL
+pattern: (?i)\bWEB(?:[-~_]?DL)?\b
+description: Matches title containing WEB and WEB-DL, using hyphen, dash ...
+tags: []
+tests:
+- expected: false
+  id: 1
+  input: Jujutsu Kaisen S03E03 MULTi 1080p WEBRiP x265
+  lastRun: '2026-02-06T22:14:17.055198'
+  matchSpan: null
+  matchedContent: null
+  matchedGroups: []
+  passes: true
+- expected: true
+  id: 2
+  input: Beverly Hills 90210 S06 FRENCH 1080p WEB H264
+  lastRun: '2026-02-06T22:14:17.055198'
+  matchSpan:
+    end: 40
+    start: 37
+  matchedContent: WEB
+  matchedGroups: []
+  passes: true
+- expected: true
+  id: 3
+  input: Chroniques d Haifa 2025 VOSTFR 1080p WEB-DL H264
+  lastRun: '2026-02-06T22:14:17.055198'
+  matchSpan:
+    end: 43
+    start: 37
+  matchedContent: WEB-DL
+  matchedGroups: []
+  passes: true
+- expected: true
+  id: 4
+  input: Chroniques d Haifa 2025 VOSTFR 1080p WEBDL H264
+  lastRun: '2026-02-06T22:14:17.055198'
+  matchSpan:
+    end: 42
+    start: 37
+  matchedContent: WEBDL
+  matchedGroups: []
+  passes: true

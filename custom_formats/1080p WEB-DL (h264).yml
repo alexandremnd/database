@@ -10,9 +10,9 @@ conditions:
   type: resolution
 - name: WEB-DL
   negate: false
+  pattern: WEBDL
   required: true
-  source: web_dl
-  type: source
+  type: release_title
 - name: h264
   negate: false
   pattern: AVC

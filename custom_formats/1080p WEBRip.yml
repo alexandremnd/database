@@ -10,7 +10,7 @@ conditions:
   type: resolution
 - name: WEBRip
   negate: false
+  pattern: WEBRip
   required: true
-  source: webrip
-  type: source
+  type: release_title
 tests: []

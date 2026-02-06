@@ -10,7 +10,7 @@ conditions:
   type: resolution
 - name: WEB-DL
   negate: false
+  pattern: WEBDL
   required: true
-  source: web_dl
-  type: source
+  type: release_group
 tests: []
