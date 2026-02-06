@@ -1,31 +1,32 @@
-<p align="center">
-  <a href="https://dictionarry.dev">
-    <img src="https://img.shields.io/badge/Website-dictionarry.dev-blue" alt="Website">
-  </a>
-  <a href="https://discord.com/invite/Y9TYP6jeYZ">
-    <img src="https://img.shields.io/discord/1202375791556431892?color=blue&logo=discord&logoColor=white" alt="Discord">
-  </a>
-  <a href="https://www.buymeacoffee.com/santiagosayshey">
-    <img src="https://img.shields.io/badge/Buy%20Me%20A%20Coffee-Support-blue?logo=buy-me-a-coffee" alt="Buy Me A Coffee">
-  </a>
-  <a href="https://github.com/sponsors/Dictionarry-Hub">
-    <img src="https://img.shields.io/badge/GitHub%20Sponsors-Support-blue?logo=github-sponsors" alt="GitHub Sponsors">
-  </a>
-</p>
+# Profilarr Config - French Torrent Community 🇫🇷
 
-# Dictionarry Database
+A [Profilarr](https://github.com/Dictionarry-Hub/profilarr) configuration database tailored for the **French torrent community**.
 
-The [Official Dictionarry Database](https://github.com/Dictionarry-Hub/database) serves two main purposes:
+## About
 
-- Powers our [Documentation](https://dictionarry.dev)
-- Acts as a [Profilarr Compliant Database](https://dictionarry.dev/profilarr-setup/linking?section=database-spotlight)
+This repository provides a Profilarr-compliant database built on top of [Dictionarry](https://dictionarry.dev) rules. It contains custom formats, quality profiles, and media management settings optimized for French torrent releases.
 
-## Profiles
+## How It Works
 
-- [Dictionarry Profiles](https://dictionarry.dev/quality-profile)
+This config leverages **Dictionarry rules** with **regex patterns** to accurately identify and score media releases. The regex patterns are designed to:
 
-## Support
-We Recommend Joining the Dictionarry Discord for any support issues you may have
-- [Discord](https://discord.com/invite/Y9TYP6jeYZ)
-- [Database Issues](https://github.com/Dictionarry-Hub/database/issues)
-- [Profilarr Issues](https://github.com/Dictionarry-Hub/profilarr/issues)
+- Match French-specific release naming conventions
+- Identify audio/video codecs, HDR formats, and quality tiers
+- Score releases based on preferred attributes (Remux, WEB-DL, Atmos, etc.)
+
+## Structure
+
+- `custom_formats/` - Custom format definitions for Radarr/Sonarr
+- `regex_patterns/` - Regex pattern rules used by Dictionarry
+- `profiles/` - Quality profile configurations
+- `media_management/` - Naming conventions and quality definitions
+- `templates/` - Reusable configuration templates
+
+## Usage
+
+Link this database to your Profilarr instance following the [Profilarr Database Setup Guide](https://dictionarry.dev/profilarr-setup/linking?section=database-spotlight).
+
+## Resources
+- [Dictionarry Documentation](https://dictionarry.dev)
+- [Profilarr Repository](https://github.com/Dictionarry-Hub/profilarr)
+- [Dictionarry Discord](https://discord.com/invite/Y9TYP6jeYZ)
