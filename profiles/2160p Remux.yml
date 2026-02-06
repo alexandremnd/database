@@ -10,18 +10,93 @@ description: '2160p Remux utilizes Video / Audio Formats to prioritise high qual
   - Average TV Sizes ~ 15 to 30gb per Episode
 
   - TV Quality Ranking ~ 10/10'
-tags: []
+tags:
+- 2160p
+- h265
+- x265
+- Lossless audio
+- HDR
 upgradesAllowed: false
-minCustomFormatScore: 0
+minCustomFormatScore: 50000
 upgradeUntilScore: 0
 minScoreIncrement: 0
-custom_formats: []
+custom_formats:
+- name: 2160p Remux
+  score: 500000
+- name: 2160p WEB-DL
+  score: 460000
+- name: UHD Bluray
+  score: 420000
+- name: Dolby Vision
+  score: 3000
+- name: HDR10+
+  score: 2000
+- name: DTS-X
+  score: 1600
+- name: DTS-HD MA
+  score: 1200
+- name: TrueHD
+  score: 1200
+- name: HDR
+  score: 1000
+- name: HDR10
+  score: 1000
+- name: HLG
+  score: 1000
+- name: PQ
+  score: 1000
+- name: FLAC
+  score: 800
+- name: PCM
+  score: 800
+- name: DTS-HD HRA
+  score: 700
+- name: Dolby Digital +
+  score: 600
+- name: DTS-ES
+  score: 500
+- name: Atmos
+  score: 400
+- name: Dolby Atmos
+  score: 400
+- name: Dolby Digital
+  score: 400
+- name: DTS
+  score: 300
+- name: AAC
+  score: 200
+- name: AV1
+  score: -999999
+- name: HDLight and 4KLight
+  score: -999999
+- name: HEVC (missing)
+  score: -999999
 custom_formats_radarr: []
 custom_formats_sonarr: []
 qualities:
-- id: 10
-  name: Bluray-1080p
+- id: -1
+  name: 2160p remux
+  description: ''
+  qualities:
+  - id: 3
+    name: Remux-2160p
+  - id: 5
+    name: WEBDL-2160p
+  - id: 4
+    name: Bluray-2160p
+- id: -2
+  name: 1080p Remux
+  description: ''
+  qualities:
+  - id: 9
+    name: WEBDL-1080p
+  - id: 10
+    name: Bluray-1080p
+  - id: 8
+    name: Remux-1080p
+  - id: 11
+    name: WEBRip-1080p
 upgrade_until:
-  id: 10
-  name: Bluray-1080p
-language: must_french
+  id: -2
+  name: 1080p Remux
+language: any

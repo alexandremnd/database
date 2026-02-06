@@ -8,7 +8,7 @@ tests:
 - expected: true
   id: 1
   input: Ballerina 2025 2160p iT WEB-DL DD+ 5.1 Atmos DV HDR10+ H.265-BYNDR
-  lastRun: '2026-02-06T22:48:00.472955'
+  lastRun: '2026-02-06T23:09:18.603706'
   matchSpan:
     end: 60
     start: 55
@@ -20,7 +20,7 @@ tests:
   id: 2
   input: 'The Lord Of The Rings: The Two Towers 2002 Extended Edition 2160p UHD BluRay
     TrueHD 7.1 DV HDR x265-DON'
-  lastRun: '2026-02-06T22:48:00.472955'
+  lastRun: '2026-02-06T23:09:18.603706'
   matchSpan:
     end: 99
     start: 95
@@ -31,7 +31,7 @@ tests:
 - expected: true
   id: 3
   input: Suspiria 2018 2160p UHD BluRay REMUX HDR HEVC TrueHD 7.1 Atmos-BLURANiUM
-  lastRun: '2026-02-06T22:48:00.472955'
+  lastRun: '2026-02-06T23:09:18.603706'
   matchSpan:
     end: 45
     start: 41
@@ -42,7 +42,7 @@ tests:
 - expected: false
   id: 4
   input: Ballerina 2025 1080p AMZN WEB-DL DD+ 5.1 Atmos H.264-BYNDR
-  lastRun: '2026-02-06T22:48:00.472955'
+  lastRun: '2026-02-06T23:09:18.603706'
   matchSpan: null
   matchedContent: null
   matchedGroups: []
@@ -50,7 +50,7 @@ tests:
 - expected: false
   id: 5
   input: Thunderbolts* 2025 Hybrid 1080p BluRay DD+ 7.1 x264-ZoroSenpai
-  lastRun: '2026-02-06T22:48:00.472955'
+  lastRun: '2026-02-06T23:09:18.603706'
   matchSpan: null
   matchedContent: null
   matchedGroups: []
@@ -58,7 +58,7 @@ tests:
 - expected: true
   id: 6
   input: Ballerina 2025 2160p iT WEB-DL DD+ 5.1 Atmos DV HDR10+ H265-BYNDR
-  lastRun: '2026-02-06T22:48:00.472955'
+  lastRun: '2026-02-06T23:09:18.603706'
   matchSpan:
     end: 59
     start: 55
@@ -70,11 +70,22 @@ tests:
   id: 7
   input: 'The Lord Of The Rings: The Two Towers 2002 Extended Edition 2160p UHD BluRay
     TrueHD 7.1 DV HDR x.265-DON'
-  lastRun: '2026-02-06T22:48:00.472955'
+  lastRun: '2026-02-06T23:09:18.603706'
   matchSpan:
     end: 100
     start: 95
   matchedContent: x.265
   matchedGroups:
   - null
+  passes: true
+- expected: true
+  id: 8
+  input: American.Psycho.2001.Multi.Bluray.Remux.2160p.HEVC.HDR10.DV.True-HD.Atmos-NoTAG
+  lastRun: '2026-02-06T23:09:18.603706'
+  matchSpan:
+    end: 50
+    start: 46
+  matchedContent: HEVC
+  matchedGroups:
+  - ''
   passes: true
