@@ -1,7 +1,7 @@
 radarr:
   rename: true
-  movieFormat: '{Movie CleanTitle} {(Release Year)} [imdbid-{ImdbId}] - {{Edition Tags}} {[MediaInfo 3D]}{[Custom Formats]}{[Quality Full]}{[Mediainfo AudioCodec}{ Mediainfo AudioChannels]}{[MediaInfo VideoDynamicRangeType]}{[Mediainfo VideoCodec]}'
-  movieFolderFormat: '{Movie CleanTitle} ({Release Year}) [imdbid-{ImdbId}]'
+  movieFormat: '{Movie CleanTitle} {(Release Year)} - {{Edition Tags}} {[MediaInfo 3D]}{[Custom Formats]}{[Quality Full]}{[Mediainfo AudioCodec}{ Mediainfo AudioChannels]}{[MediaInfo VideoDynamicRangeType]}{[Mediainfo VideoCodec]}'
+  movieFolderFormat: '{Movie CleanTitle} ({Release Year}) [imdbid-{ImdbId}] [tmdbid-{TmdbId}]'
   replaceIllegalCharacters: false
   colonReplacementFormat: smart
 sonarr:
